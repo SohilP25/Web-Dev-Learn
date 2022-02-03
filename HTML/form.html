@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohil FOrm</title>
+    <h1>Sohil Form</h1>
+</head>
+
+<body>
+    <p>Here you create form with form tag and action attribute is used for link backend to this form</p>
+    <form action="backend.php">
+        <label for="name"></label>
+        <p>Use div tag to seprate one item to another </p>
+        <p> Use input tag for Take any type of input and you define attribute type for diffrent items </p>
+        <a href="https://www.w3schools.com/tags/att_input_type.asp" target="_blank">For Example Click Here</a> 
+        <p></p>
+        <p>name attribute defines for same Divison or same item</p>
+        <p>value attribute defines what you want to write on button</p>
+        <p> lable tag used when you click on name it highlights that button,used with id tag</p>
+        <div>
+            <label for="name"></label>
+            Name : <input type="text" id="name" name="name"><br>
+            Surname : <input type="text" name="surname" id="name">
+        </div>
+        <div>
+            Birthdate : <input type="date" name="bdate">
+        </div>
+        <div>
+            Gender : Male<input type="radio" name="gender"> Female<input type="radio" name="gender"> Other<input type="radio" name="gender">
+        </div>
+        <div>
+            <label for="std"></label>
+            Select Std. :
+            <select name="std" id="std">
+                <option value="null" selected>Select your standard</option>
+                <option value="nine">9th</option>
+                <option value="ten">10th</option>
+                <option value="eleven">11th</option>
+                <option value="twelth">12th</option>
+            </select>
+        </div>
+
+        <div>
+            Sports : Cricket<input type="checkbox" name="crkt">
+            football<input type="checkbox" name="ftbl">
+        </div>
+        <div>
+            password <input type="password" name="pwd" id=""><br>
+            Select file :<input type="file" name="" id=""><br>
+            Select colour : <input type="color" name="" id=""><br>
+            search <input type="search" name="search" id=""><br>
+        </div>
+        <div>
+            Write about yourself : <br><textarea name="intro" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+
+</html>

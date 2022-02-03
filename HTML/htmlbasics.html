@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Comment is initialized like this.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website's title contain in title tag which we shown in tab's name in browser -->
+    <title>HTML Basics</title>
+    <h1>HTML Basics</h1>
+</head>
+
+<body>
+    <p>
+    <h2>1.Text Formatting.</h2>
+    </p>
+    <p> this is a <br /> line breake use br/</p>
+
+    <p> Here A is in normal and after all are in diffrent tags</p>
+    <p>A  <b>This Is A Bold Text Used Tag b.</b></p>
+    <p>A <big>This Is A Big Text Used Tag big.</big></p>
+    <p>A <i>This Is A italic Text Used Tag i/em.</i></p>
+    <p>A <small>This Is A small Text Used Tag small.</small></p>
+    <p>A <strong>This Is A strong Text Used Tag strong.</strong></p>
+    <p>A <sub>This Is A Subscripted Text Used Tag sub.</sub></p>
+    <p>A <sup>This Is A Superscripted Text Used Tag sup.</sup></p>
+    <p>A <ins>This Is A Inserted Text Used Tag ins.</ins></p>
+    <p>A <del>This Is A Deleted Text Used Tag del.</del></p>
+    <p>A <em>This Is A Emphasized Text Used Tag em.</em></p>
+
+
+
+<br />
+<hr /><br />
+
+
+    <h2>2.Headings,Lines & Comments</h2>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <p>For create a Horizontal line use tag hr/</p>
+    <hr />
+    <p>For create a Horizontal line use tag hr/</p>
+    <p>use bracates and ! for comments</p>
+    <!--this is comments-->
+
+
+<br />
+<hr /><br />
+
+    <h2>3.Attributes</h2>
+    <p> defines in paragraph starting tag ex. p name="value"</p>
+    <p align="center">this attributes defines text in center used tag p align="center"</p>
+    <p>This is modifying of lines Ex. hr width="50px" OR hr width="50%"</p>
+    <hr width="50px" />
+    <hr width="100px" />
+    <hr width="150px" />
+    <hr width="200px" />
+    <hr width="400px" />
+    Align Attribute is also used in text and horizontal lines Ex. hr width="400px" align="right"/
+    <hr width="400px" align="right" />
+
+<br />
+<hr /><br />
+
+    <h2>4.Anchor Tags & Image Tags </h2>
+
+    <p>Use tag a and attribute href to link site </p>
+    <p>If you want to link local file than instead of URL you put \filename </p>
+    <a href="https://www.google.com/"> Go to Google </a><br>
+    <a href="https://www.google.com/" target="_blank"> Go to Google(Here site open in new tab because of you use attribute target="_blank") </a>
+    
+    <p>
+    To insert an image used tag is img/ <br />
+    img tag uses attributes like image's URL (address) can be defined using the attribute src
+    Ex. img src="image.jpg OR you can provide any link of image" 
+    </p>
+    <p>alt attribute use when image is not processed alt text will be shown</p>
+    <p>you can use width and height attribute to set photo's height and width</p>
+
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=983&q=80"
+        alt="car image" width="500px">
+
+    <br />
+<hr /><br />
+
+        <h2>5.Lists tags </h2>
+
+        <p>Use ul tag for Unordered list and ol tag for ordered list</p>
+        <p>Use li tag in ul/ol tag for write items</p>
+        <ul type="square">
+            <li>This is my first item of my unordered list</li>
+            <li>This is my second item of my unordered list</li>
+            <li>This is my third item of my unordered list</li>
+        </ul>
+        <ol type="1">
+            <li>This is my first item of my unordered list</li>
+            <li>This is my second item of my unordered list</li>
+            <li>This is my third item of my unordered list</li>
+        </ol>
+        <p>You can use type="" attribute to customize them and you also nest lists </p>
+
+<br />
+<hr /><br />
+        
+        <h2>6.Tables tags </h2>
+        
+        <p>Use tag table for initialize table and it's subtags are thead & tbody</p>
+        <p>Use tr tag to add new row</p>
+        <p> th tag used in thead in tr for add data </p>
+        <p> td tag used in tbody in tr for add data</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Roll No.</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anuj</td>
+                    <td>234</td>
+                    <td>maths</td>
+                </tr>
+                <tr>
+                    <td>Vishal</td>
+                    <td>847</td>
+                    <td>science</td>
+                </tr>
+                <tr>
+                    <td>dev</td>
+                    <td>424</td>
+                    <td>english</td>
+                </tr>
+            </tbody>
+        </table>
+
+<br />
+<hr /><br />
+                
+<h2>7.Inline and Block Elements </h2>
+<p>Block element consumes whole space at specific line and other line print at next line</p>
+<p>Inline element use only specific space which you written in line </p>
+<p> For Example : </p>
+<p style="border:2px solid red;">This is a line using p tag</p><p style="border:2px solid blue;">This also a line using p tag</p>
+<span style="border:2px solid red;">This is a line using span tag</span><span style="border:2px solid blue;"> This also a line using span tag</span>
+<!-- here i use css style for undersatnding -->
+<p>Here p is block element and span is a inline element</p>
+                
+<br />
+<hr /><br />
+
+<h2>8.Ids and Classes      </h2>
+<p> id attribute  is distinct for any element(tag) like div,p,span,Etc.</p>
+<p> class attribute define when you give same properties for multiple tags</p>
+<p>Example : </p>
+<div id="mainbox" class="redbg">here id is mainbox which is unique for this div and class is redbg</div>
+<div id="anotherbox" class="redbg">here id is anotherbox and class is redbg</div>
+
+<br />
+<hr /><br />
+
+<h2>9.HTML Entities</h2>
+<div>Space is write as &nbsp; (and)npsp; </div>
+<div>bracket is written as &lt;p&gt;</div>
+<div>pound is written as &pound;</div>
+<div>copyright is written as &copy;</div>
+
+<br />
+<hr /><br />
+
+<h2>10. Semantic tags</h2>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html" target="_blank">Semantic Tags</a>
+
+</body>
+
+</html>
