@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        p{color: blue; background-color: pink;}
+        /* Id Selector */
+        #greenbg{color: white; background-color: green;}
+        /* Class Selector */
+        .blackbg{color: white; background-color: black;} 
+        /* Grouping Selector */
+        footer,span{color: red; background-color: yellowgreen;}
+    </style>
+</head>
+<body>
+    <p>This is a paragraph</p>
+    <p class="blackbg">This is another paragraph with class </p>
+    <p id="greenbg">This is another paragraph with id</p>
+    <div>
+        <p> This is a Para in div</p>
+        <span>This is a span in div </span>
+    </div>
+    <footer>This is a footer</footer>
+    <script>
+        // var c = '     heLLo      my name is SOHIL';
+        // console.log(c);
+        // c = c.concat(" hello    ");
+        // console.log(c);
+        // c = c.replace('sohil','anupam')
+        // console.log(c.trim());
+        // console.log(c.toLowerCase());
+        // // alert("Welcome MEN.....")
+        // let name = prompt("Write your name","Anupam");  
+        // console.log(name);
+
+        let age = prompt("Enter Your age");
+
+        if(age < 0){
+            alert("Invalid Age");
+        }
+        else if(age > 18){
+            alert("WELCOME TO THE CLUB");
+        }
+        else
+            alert("YOU CAN'T ENTER TO THE CLUB")
+        
+    </script>
+</body>
+</html>
